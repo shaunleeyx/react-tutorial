@@ -22,17 +22,6 @@ function App() {
 }
 */
 
-function MyButton() {
-  const [count,setCount] = React.useState(0);
-  function handleClick(){
-    setCount(count+1);
-  }
-  return (
-    <button onClick ={handleClick}>
-      CLicked {count} times
-    </button>
-  );
-}
 
 const user = {
   name: 'Hedy Lamarr',
@@ -71,14 +60,23 @@ const grid = () => {
   return l
 };
 
+function MyButton({count,onClick}) {
+  }
+  return (
+    <button onClick ={handleClick}>
+      CLicked {count} times
+    </button>
+  );
+}
 
 function App() {
+  const [count,setCount] = React.useState(0);
   return (
     <tbody>
       <tr>
-        <MyButton/>
+        <MyButton count = {count} onClick={handleClick}/>
         <br/>
-        <MyButton/>
+        <MyButton count = {count} onClick={handleClick}/>
         <br/>
         {grid()}
         <h1>
