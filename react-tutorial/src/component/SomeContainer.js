@@ -2,17 +2,17 @@ import React from 'react'
 import AnotherContainer from './AnotherContainer'
 
 const SomeContainer = () => {
+  
+
   return (
 
 
 
     <div>
-        SomeContainer
         <p>
-            Hello World hello lmao
+            {AnotherContainer} 
         </p>
         <p>
-            {AnotherContainer}
         </p>
         
     </div>
