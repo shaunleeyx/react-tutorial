@@ -8,7 +8,7 @@ import {
 import "./App.css";
 import React from "react";
 import MyButton from "./component/MyButton";
-import Board from "./component/Board";
+import Board from "./component/Board.js";
 
 /*
 function App() {
